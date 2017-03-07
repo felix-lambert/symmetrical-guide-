@@ -1,0 +1,32 @@
+{
+  "name": "ct-cloud-mqtt-listener",
+  "version": "1.8.2",
+  "description": "MQTT listener to send meter message to ct-cloud-api",
+  "main": "listener.js",
+  "scripts": {
+    "listen": "./node_modules/nodemon/bin/nodemon.js listener.js",
+    "aws": "NODE_ENV=aws node listener.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com:Citytaps/ct-cloud-mqtt-listener.git"
+  },
+  "engines": {
+    "node": "6.7.0"
+  },
+  "author": "CityTaps",
+  "license": "MIT",
+  "dependencies": {
+    "aws-iot-device-sdk": "^1.0.12",
+    "aws-sdk": "^2.6.9",
+    "bunyan": "^1.8.1",
+    "bunyan-logentries": "^1.2.0",
+    "le_node": "^1.6.7",
+    "mqtt": "^1.11.0",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.2",
+    "istanbul": "^0.4.5"
+  }
+}
